@@ -35,7 +35,7 @@ section {
 #about,
 #projects,
 #testimonials,
-#contact-form {
+#connect-form {
     /* Add top padding to avoid content overlay */
     padding-top: 6em;
 }
@@ -52,7 +52,7 @@ section {
     background-color: teal;
 }
 
-#contact-form {
+#connect-form {
     background-color: white;
 }
 
@@ -144,7 +144,7 @@ h3 {
 }
 
 #projects h3,
-#contact-form h3 {
+#connect-form h3 {
     color: black;
     border-bottom: 3px solid black;
 }
