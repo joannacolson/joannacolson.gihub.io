@@ -36,7 +36,7 @@ You can find Joanna's portfolio [here!](https://joannacolson/github.io/)
 
   		Wins: learned more about each technology used.
 
-			Challenges: development of advanced features, such as the carousel functions.
+  		Challenges: development of advanced features, such as the carousel functions.
 
 
 ## To-Do List Example
