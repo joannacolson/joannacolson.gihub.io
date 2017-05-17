@@ -1,0 +1,478 @@
+body {
+    /*remove the default margins from the page*/
+    /*to remove the white edges from the page*/
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: blue;
+    /*Hide the content behind the header*/
+    overflow: hidden;
+    /* Set the header to fixed position */
+    position: fixed;
+    /* Position the header at the top of the page */
+    top: 0;
+    /* Full width */
+    width: 100%;
+    /*Position the header in front of project images and dots*/
+    z-index: 10000;
+}
+
+section {
+    min-height: 33em;
+}
+
+.navbar {
+    background-color: blue;
+}
+
+#about,
+#projects,
+#testimonials,
+#contact-form {
+    /* Add top padding to avoid content overlay */
+    padding-top: 6em;
+}
+
+#about {
+    background-color: deepskyblue;
+}
+
+#projects {
+    background-color: white;
+}
+
+#testimonials {
+    background-color: teal;
+}
+
+#contact-form {
+    background-color: white;
+}
+
+footer {
+    background-color: blue;
+    height: 4em;
+}
+
+.center {
+    text-align: center;
+}
+
+#about img {
+    width: 25%;
+}
+
+.center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-block {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header > div {
+    width: 49%;
+    /*This sets both divs on one horizontal line*/
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h6 {
+    color: white;
+    font-size: 1.2em;
+    margin: 1.59em 0 1.59em 3em;
+}
+
+.navbar li {
+    /*This sets the 4 li on one horizontal line*/
+    display: inline-block;
+}
+
+.menu li {
+    margin: 1em 3.5em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: .3em .2em;
+    /*Margin doesn't apply to inline .menu anchors*/
+    margin: .7em 0;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+}
+
+a:hover {
+    color: magenta;
+}
+
+.active {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+    font-size: 2.7em;
+    padding: .2em;
+    margin: .3em;
+    border-bottom: 3px solid white;
+}
+
+h3 {
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    padding: .2em;
+    border-bottom: 3px solid white;
+}
+
+#projects h3,
+#contact-form h3 {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+h5 {
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col-1-2 {
+    width: 40%;
+}
+
+.col-1-1 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#about p {
+    color: white;
+}
+
+#testimonials p {
+    color: white;
+    width: 70%;
+}
+
+form p {
+    display: none;
+    margin-top: .1em;
+}
+
+form {
+    width: 80%
+}
+
+.email,
+.full-name,
+.subject {
+    color: #777;
+    padding: .4em 1em;
+    margin: 0 0 .7em;
+    height: 2.5em;
+    border: 1px solid #777;
+}
+
+.message {
+    color: #777;
+    padding: 1em;
+    height: 8em;
+    border: 1px solid #777;
+}
+
+.submit {
+    color: #777;
+    background-color: transparent;
+    padding: .3em;
+    margin: .5em 0 5em 0;
+    height: 2.5em;
+    border: 1px solid #777;
+    -webkit-transition: color 1s ease-out, background-color 1s ease-out;
+    transition: color 1s ease-out, background-color 1s ease-out;
+}
+
+.submit:hover {
+    color: white;
+    background-color: #777;
+}
+
+.error {
+    border: 2px solid #ED5254;
+}
+
+footer p {
+    color: white;
+    padding: 1.4em;
+}
+
+.quotes {
+    display: none;
+}
+
+
+/*Hamburger menu CSS*/
+
+.hamburger-icons {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2em;
+    padding: .6em 1em 0 1em;
+    color: #fff;
+    border: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 100000;
+}
+
+.cross {
+    display: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1em;
+    padding: .625em .5em 0px .5em;
+    color: #fff;
+    border: 0;
+    font-size: 3.2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 100000;
+}
+
+
+/*Slick slider carousel CSS*/
+
+.container {
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 3%;
+    width: 80%;
+    color: #333;
+    background: #419be0;
+}
+
+.slick-slide {
+    text-align: center;
+    color: #419be0;
+    background: white;
+}
+
+#projects img {
+    /*Set the image to fill 100% of the slide width*/
+    width: 100%;
+    /*Size the image to cover its content box, cropping the image sides as needed*/
+    object-fit: cover;
+}
+
+
+/*Override the font-size of the slick-dots to make them larger*/
+
+.slick-dots li button:before {
+    font-size: 14px;
+}
+
+
+/*"Super Simple Lightbox" CSS*/
+
+#lightbox {
+    /* keeps the lightbox window in the current viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    /*Center the image in the lightbox*/
+    text-align: center;
+    /*display the lightbox in front of all other elements*/
+    z-index: 1000000;
+    /*hide the lightbox until it is activated by the user's clicking the slide*/
+    display: none;
+}
+
+#lightbox p {
+    text-align: right;
+    color: #fff;
+    margin-right: 1.5em;
+    font-size: 1em;
+}
+
+#lightbox img {
+    box-shadow: 0 0 2em #111;
+    -webkit-box-shadow: 0 0 2em #111;
+    -moz-box-shadow: 0 0 2em #111;
+    /*max-width: 90%;*/
+    width: 90%;
+    object-fit: contain;
+}
+
+
+/*Device width is > = 561px*/
+
+@media only screen and (min-width: 561px) {
+    /*    #about {
+    background-color: cyan;
+}
+*/
+    .menu {
+        /*This hides the hamburger menu when user resizes the screen.*/
+        display: none !important;
+    }
+}
+
+
+/*Video cover page CSS from coverr.co*/
+
+
+/*This fixes hiding the poster when bootstrap is not included to provide the hidden class*/
+
+.hidden {
+    display: none;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+/*Additional styling for the cover page*/
+
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 4.8em;
+}
+
+h4 {
+    font-size: 2.5em;
+}
+
+
+/*Device width is < = 560px*/
+
+@media only screen and (max-width: 560px) {
+    #about {
+        background-color: mediumseagreen;
+    }
+    .navbar {
+        display: none;
+    }
+    .hamburger-icons {
+        display: block;
+    }
+    #about img {
+        width: 80%;
+    }
+    h5 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 2em;
+        padding: .5em 1em;
+    }
+    .col-1-2 {
+        width: 90%;
+    }
+    p {
+        font-size: 1.15em;
+    }
+    h2 {
+        font-size: 2.6em;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+    h6 {
+        font-size: 1.1em;
+    }
+}
