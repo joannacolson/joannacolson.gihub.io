@@ -8,8 +8,8 @@ function slideHamburgerMenuClosed() {
 
 // js executed once page has finished loading
 $(function() {
-    // add smooth scrolling to the header's anchors
-    $("header").on('click', 'a', function(event) {
+    // add smooth scrolling to selected header anchors with the smooth-scroll class
+    $(".smooth-scroll").on('click', 'a', function(event) {
         event.preventDefault();
 
         $('html, body').animate({
