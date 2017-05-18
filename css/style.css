@@ -296,8 +296,9 @@ footer p {
 }
 
 #projects img {
-    /*Set the image to fill 100% of the slide width*/
-    width: 100%;
+    /*Set the image to the correct proportions of its content box's width and height*/
+    width: 50%;
+    height: 25vw;
     /*Size the image to cover its content box, cropping the image sides as needed*/
     object-fit: cover;
 }

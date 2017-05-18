@@ -59,8 +59,8 @@ $(function() {
         $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
     });
 
-    // Add the click function to the carousel slides to show the lightbox
-    $('.slick-slider').on('click', '.slick-slide', function(event) {
+    // Add the click function to the carousel slide's img to show the lightbox
+    $('.slick-slider').on('click', '.slick-slide img', function(event) {
         //prevent default action (hyperlink)
         event.preventDefault();
         //get the clicked image src of the image to be displayed
