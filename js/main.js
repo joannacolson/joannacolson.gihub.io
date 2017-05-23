@@ -95,7 +95,6 @@ $(function() {
 
     // Edit the form fields for blank values
     $(".submit").on("click", function(event) {
-        event.preventDefault();
         $(".edited-element").each(function() {
             if ($(this).val()) {
                 // value is non-blank
@@ -104,6 +103,7 @@ $(function() {
                     .siblings().hide();
             } else {
                 // value is blank
+                event.preventDefault();
                 $(this)
                     .addClass("error")
                     .siblings().fadeIn(1000);
