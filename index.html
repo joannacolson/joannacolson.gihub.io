@@ -155,24 +155,32 @@
             <div class="center">
                 <h3>Connect With Me</h3>
             </div>
-            <form class="center-block" action="/webformmailer.php" method="post">
+            <form class="center-block" action="contact-form/contactscript.php" method="POST">
                 <input type="hidden" name="subject" value="Website Form Submission">
                 <input type="hidden" name="redirect" value="thankyou.html">
                 <div class="col-1-1">
-                    <input class="full-name col-1-1 edited-element" type="text" name="full-name" placeholder="Full Name">
-                    <p>Please enter your full name.</p>
+                    <input class="name col-1-1 edited-element" type="text" name="name" placeholder="Your Name">
+                    <p>Please enter your name.</p>
                 </div>
                 <div class="col-1-1">
-                    <input class="email col-1-1 edited-element" type="email" name="email" placeholder="Email">
-                    <p>Please enter an email address.</p>
+                    <input class="title col-1-1 edited-element" type="text" name="title" placeholder="Your Title">
+                    <p>Please enter your title.</p>
                 </div>
                 <div class="col-1-1">
-                    <input class="subject col-1-1 edited-element" type="text" name="subject" placeholder="Subject">
-                    <p>Please enter a subject.</p>
+                    <input class="email col-1-1 edited-element" type="email" name="email" placeholder="Your Email">
+                    <p>Please enter your email address.</p>
                 </div>
                 <div class="col-1-1">
-                    <textarea class="message col-1-1 edited-element" name="message" placeholder="Message"></textarea>
-                    <p>Please enter a message.</p>
+                    <input class="company col-1-1 edited-element" type="text" name="company" placeholder="Your Company">
+                    <p>Please enter your company.</p>
+                </div>
+                <div class="col-1-1">
+                    <input class="subject col-1-1 edited-element" type="text" name="subject" placeholder="Your Subject">
+                    <p>Please enter your subject.</p>
+                </div>
+                <div class="col-1-1">
+                    <textarea class="message col-1-1 edited-element" name="message" placeholder="Your Message"></textarea>
+                    <p>Please enter your message.</p>
                 </div>
                 <div class="col-1-1">
                     <input class="submit col-1-1" type="submit" name="submit" value="Submit">

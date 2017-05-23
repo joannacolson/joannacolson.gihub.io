@@ -187,12 +187,14 @@ form {
     width: 80%
 }
 
+.name,
+.title,
 .email,
-.full-name,
+.company,
 .subject {
     color: #777;
     padding: .4em 1em;
-    margin: 0 0 .7em;
+    margin: 0 0 1em;
     height: 2.5em;
     border: 1px solid #777;
 }
