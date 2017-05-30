@@ -348,6 +348,67 @@ footer p {
 }
 
 
+/* Thank You page CSS, like the lightbox setup */
+
+#thank-you-page {
+    /* keeps the thank you page window in the current viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    /*Center the message in the thank you page*/
+    text-align: center;
+    /*display the thank you page in front of all other elements*/
+    z-index: 1000000;
+    /*hide the thank you page until it is activated by the user's submitting the contact form*/
+    /*display: none;*/
+}
+
+#thank-you-page p {
+    text-align: right;
+    color: #fff;
+    margin-right: 1.5em;
+    font-size: 1em;
+}
+
+#thank-you-page-message {
+    background-color: darkgreen;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 0 0 2em #111;
+    -webkit-box-shadow: 0 0 2em #111;
+    -moz-box-shadow: 0 0 2em #111;
+}
+
+#thank-you-page h3 {
+    /*set the h3s to desired values*/
+    display: block;
+    border-bottom: none;
+    font-size: 1.3em;
+    padding: .5em;
+    /*center it with white text*/
+    text-align: center;
+    color: #fff;
+    /*put margins on it*/
+    margin: .9em 8%;
+}
+
+#thank-you-page h4 {
+    /*set the h4s to desired values*/
+    display: block;
+    border-bottom: none;
+    font-size: 1.2em;
+    padding: .7em;
+    /*center it with white text*/
+    text-align: center;
+    color: #fff;
+    /*put margins on it*/
+    margin: 0em 8%;
+}
+
+
 /*Device width is > = 561px*/
 
 @media only screen and (min-width: 561px) {

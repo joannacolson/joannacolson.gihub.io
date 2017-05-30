@@ -8,6 +8,7 @@ function slideHamburgerMenuClosed() {
 
 // js executed once page has finished loading
 $(function() {
+    console.log('document loaded');
     // add smooth scrolling to selected header anchors with the smooth-scroll class
     $(".smooth-scroll").on('click', 'a', function(event) {
         event.preventDefault();
@@ -81,6 +82,13 @@ $(function() {
     //Click anywhere on the page to get rid of lightbox window
     $('body').on('click', '#lightbox', function() { //use delegated event listener, as the lightbox element is inserted into the DOM dynamically
         $(this).fadeOut(300);
+    });
+
+    //Click anywhere on the thank you page to get rid of the window by reloading the main window
+    $("#thank-you-page").on("click", function() {
+        // Reload the window, which displays its starting page, hides the thank you page and clears the contact form fields
+        // window.location.href = "http://joannacolson.com/";
+        window.location.href = "./index.html";
     });
 
     // Add the hamburger menu click event to show and hide the menu

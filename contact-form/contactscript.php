@@ -14,7 +14,6 @@ if(isset($_POST['email'])) {
     //     die();
     // }
 
-
     // validation expected data exists
     // if(!isset($_POST['name']) ||
     //     !isset($_POST['title']) ||
@@ -24,8 +23,6 @@ if(isset($_POST['email'])) {
     //     !isset($_POST['message'])) {
     //     died('We are sorry, but there appears to be data missing from the form you submitted.');
     // }
-
-
 
     $name = $_POST['name']; // required
     $title = $_POST['title']; // required
@@ -55,15 +52,15 @@ if(isset($_POST['email'])) {
   //   died($error_message);
   // }
 
-    $email_message = "Form details below.\n\n";
+    // In case any of our lines are larger than 70 characters, we should use wordwrap()
+    $message = wordwrap($message, 60, "\r\n");
 
+    $email_message = "Form details below:\n\n";
 
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
-    }
-
-
+      }
 
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Title: ".clean_string($title)."\n";
@@ -72,19 +69,38 @@ if(isset($_POST['email'])) {
     $email_message .= "Subject: ".clean_string($subject)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
 
-// create email headers
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n".
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);
-?>
+    // Additional headers. When sending an email, it must contain a From header
+    $headers = 'From: ' . $email_from . "\r\n" .
+    'Reply-To: ' . $email_from . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
-<!-- include your own success html here -->
-<!-- Consider adding script to unhide a thank you message with a click to hide it again -->
+    // Send
+    mail($email_to, $email_subject, $email_message, $headers);
+    ?>
 
-<!-- Thank you for contacting us. We will be in touch with you very soon. -->
-    console.log('I ran the contactscript.php script');
+    <script>
+      // include your own success html here
+      // Consider adding script to unhide a thank you message with a click to hide it again
+      // And to clear the form fields to remove the data the user entered.
+      // Thank you for contacting us. We will be in touch with you very soon.
+
+      // Unhide a thank you page like the lightbox with a click on it that hides it again.
+
+      // Reload the page to not show the php page and clear the form fields.
+
+      // Show the thank you page to the user
+      // document.getElementById('thank-you-page').style.display = 'block' // show the page
+
+      // Go back to the main page without reloading the page so that the thank you page shows
+      // history.pushState(null, null, "http://joannacolson.com/");
+      console.log('I got to the php page here...');
+      // window.history.go(-1);
+      window.location.href = "../thankyou.html";
+
+
+      // When the user clicks the thank you page, the event reloads the window to get rid of it
+    </script>
+
 <?php
-
 }
 ?>
