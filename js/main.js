@@ -84,10 +84,9 @@ $(function() {
         $(this).fadeOut(300);
     });
 
-    //Click anywhere on the thank you page to get rid of the window by reloading the main window
+    //Click anywhere on the thank you page to reload the main window
     $("#thank-you-page").on("click", function() {
-        // Reload the window, which displays its starting page, hides the thank you page and clears the contact form fields
-        // window.location.href = "http://joannacolson.com/";
+        // Load the the index page, which displays its starting page and clears the contact form fields
         window.location.href = "./index.html";
     });
 

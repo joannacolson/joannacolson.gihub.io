@@ -79,26 +79,8 @@ if(isset($_POST['email'])) {
     ?>
 
     <script>
-      // include your own success html here
-      // Consider adding script to unhide a thank you message with a click to hide it again
-      // And to clear the form fields to remove the data the user entered.
-      // Thank you for contacting us. We will be in touch with you very soon.
-
-      // Unhide a thank you page like the lightbox with a click on it that hides it again.
-
-      // Reload the page to not show the php page and clear the form fields.
-
-      // Show the thank you page to the user
-      // document.getElementById('thank-you-page').style.display = 'block' // show the page
-
-      // Go back to the main page without reloading the page so that the thank you page shows
-      // history.pushState(null, null, "http://joannacolson.com/");
-      console.log('I got to the php page here...');
-      // window.history.go(-1);
+      // Go to the thank you page to show it to the user
       window.location.href = "../thankyou.html";
-
-
-      // When the user clicks the thank you page, the event reloads the window to get rid of it
     </script>
 
 <?php

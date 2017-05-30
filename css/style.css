@@ -362,8 +362,6 @@ footer p {
     text-align: center;
     /*display the thank you page in front of all other elements*/
     z-index: 1000000;
-    /*hide the thank you page until it is activated by the user's submitting the contact form*/
-    /*display: none;*/
 }
 
 #thank-you-page p {
