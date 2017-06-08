@@ -95,7 +95,15 @@ ul {
 h6 {
     color: white;
     font-size: 1.2em;
+}
+
+header h6 {
     margin: 1.59em 0 1.59em 3em;
+}
+
+#about h6 {
+    margin: 1em auto;
+    border-bottom: 1px solid white;
 }
 
 .navbar li {
@@ -118,6 +126,16 @@ a {
 }
 
 a:hover {
+    color: magenta;
+}
+
+#projects a {
+    color: deepskyblue;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+}
+
+#projects a:hover {
     color: magenta;
 }
 
@@ -151,6 +169,7 @@ h3 {
 
 h5 {
     color: white;
+    font-size: 1.2em;
 }
 
 .flex-container {
@@ -299,7 +318,7 @@ footer p {
 
 #projects img {
     /*Set the image to the correct proportions of its content box's width and height*/
-    width: 50%;
+    width: 100%;
     height: 25vw;
     /*Size the image to cover its content box, cropping the image sides as needed*/
     object-fit: cover;
