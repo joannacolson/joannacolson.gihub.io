@@ -43,7 +43,7 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 4000,
         speed: 800,
-        arrows: true,
+        arrows: false,
         pauseOnDotsHover: true
     });
 
