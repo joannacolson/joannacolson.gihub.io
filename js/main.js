@@ -23,7 +23,7 @@ $(function() {
     $(window).on("scroll", function() {
         var position = $(this).scrollTop();
         // offset highlights the section before reaching the very top of the page.
-        var offset = 5;
+        var offset = 20;
 
         $(".section").each(function() {
             var target = $(this).offset().top;
