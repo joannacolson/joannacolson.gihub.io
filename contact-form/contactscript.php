@@ -25,10 +25,10 @@ if(isset($_POST['email'])) {
     // }
 
     $name = $_POST['name']; // required
-    $title = $_POST['title']; // required
+    // $title = $_POST['title']; // required
     $email_from = $_POST['email']; // required
     $company = $_POST['company']; // required
-    // $subject = $_POST['subject']; // required
+    $subject = $_POST['subject']; // required
     $message = $_POST['message']; // required
 
   //   $error_message = "";
@@ -63,10 +63,10 @@ if(isset($_POST['email'])) {
       }
 
     $email_message .= "Name: ".clean_string($name)."\n";
-    $email_message .= "Title: ".clean_string($title)."\n";
+    // $email_message .= "Title: ".clean_string($title)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Company: ".clean_string($company)."\n";
-    // $email_message .= "Subject: ".clean_string($subject)."\n";
+    $email_message .= "Subject: ".clean_string($subject)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
 
     // Additional headers. When sending an email, it must contain a From header

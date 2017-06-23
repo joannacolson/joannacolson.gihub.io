@@ -1,7 +1,7 @@
 /*color palette chosen from Adobe 'Blue Sky color theme'*/
 
 
-/*Colors: 16193B 35478C 4E7AC7 7FB2F0 ADD5F7*/
+/*Colors: #16193B #35478C #4E7AC7 #7FB2F0 #ADD5F7*/
 
 body {
     /*remove the default margins from the page*/
@@ -38,19 +38,24 @@ section {
 }
 
 #about,
-#projects,
 #testimonials,
 #connect-form {
     /* Add top padding to avoid content overlay */
     padding-top: 6em;
 }
 
+#projects {
+    /* Add top padding to avoid content overlay */
+    padding-top: 3.5em;
+}
+
 #about {
     background-color: #4E7AC7;
+    padding-bottom: 2em;
 }
 
 #projects {
-    background-color: #7FB2F0;
+    background-color: #ADD5F7;
     padding-bottom: 2em;
 }
 
@@ -59,7 +64,7 @@ section {
 }
 
 #connect-form {
-    background-color: #ADD5F7;
+    background-color: #7FB2F0;
 }
 
 footer {
@@ -119,6 +124,7 @@ header h6 {
 
 .navbar a {
     font-size: 1.1em;
+    padding: .8em;
 }
 
 .menu li {
